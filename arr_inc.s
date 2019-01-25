@@ -11,7 +11,7 @@ main:
 	.cfi_offset 6, -16
 	mov	rbp, rsp               ;rbp <- rsp ;
 	.cfi_def_cfa_register 6
-	sub	rsp, 64                ;rbp <- rbp - 64; 
+	sub	rsp, 64                ;rsp <- rsp - 64; 
 	mov	DWORD PTR [rbp-52], edi;[rbp-52] <- edi;
 	mov	QWORD PTR [rbp-64], rsi;[rbp-64] <- rsi;
 	mov	rax, QWORD PTR fs:40    ; rax <- [fs:40] ;3275154791537847040
